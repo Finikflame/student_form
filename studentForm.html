@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registeration Form</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+				display: flex;
+			justify-content: center;
+			background-image: url(https://njbmagazine.com/wp-content/uploads/2020/07/college_graduate-775x500.jpeg);
+			background-size: 1500px 1300px;
+			padding: 50px;
+			background-position: no-repeat;
+		
+		}
+		.main{
+			width: 550px;
+			background: linear-gradient(45deg,orange,lightgreen);
+			padding: 20px;
+			border-style: double;
+			border-width: 5px;
+			border-radius: 10px;
+			font-family: 'Roboto', sans-serif;
+		}
+		h2,h1{
+			display: block;
+			text-align: center;
+		}
+		input{
+			margin-bottom: 20px;
+			color: gray;
+		}
+		p{
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body class="container-fulid">
+	<div class="main">
+		<h1>Form</h1>
+	<h2>Students Register</h2>
+
+	<form>
+		<div>
+		<label class="form-label" style="display: block;">Photo</label>
+		<input type="file" class="form-control-file  bg-dark" name="">
+	</div>
+		<div>
+			<label class="form-label" style="display: block;">Name</label>
+		<input type="text"  class="form-control  bg-dark"name="" placeholder="Your Name">
+		</div>
+		<div>
+			<label class="form-label" style="display: block;">Phone</label>
+		<input type="number"  class="form-control bg-dark"name="" placeholder="Phone Number">
+		</div>
+		<div>
+			<label class="form-label" style="display: block;">Email</label>
+		<input type="text"  class="form-control bg-dark"name="" placeholder="Email Address">
+		</div>
+		<div>
+			<label class="form-label" style="display: block;">Age</label>
+		<input type="number"  class="form-control  bg-dark"name="" placeholder="Your Age">
+		</div> 
+		<div>
+			 <label class="form-label" style="display: block;">Date of birth</label>
+		<input type="date"  class="form-control  bg-secondary"name="" placeholder="birthday">
+		</div>
+		<div>
+			<label class="form-label">Gender</label>
+			<select class="form-select form-select-col-3 bg-secondary" >
+				<option selected="Gender">Select your gender</option>
+				<option>male</option>
+				<option>female</option>
+			</select>
+		</div>
+		<div>
+		<p>Hobby</p>
+				<label for="hb1">Playing online games
+				</label>
+				<input type="checkbox" id="hb1" name="">
+			
+				<label for="hb2">Reading books
+				</label>
+				<input type="checkbox" id="hb2" name="">
+			
+				<label for="hb3">Listening Music
+				</label>
+				<input type="checkbox" id="hb3" name=""><br>
+			
+				<label for="hb4">Shopping
+				</label>
+				<input type="checkbox" id="hb4" name="">
+			
+				<label for="hb5">Going Online
+				</label>
+				<input type="checkbox" id="hb5" name="">
+			
+				<label for="hb6">Learning New Skills
+				</label>
+				<input type="checkbox" id="hb6" name="">
+		</div>
+		<div>
+			<p>Payment method</p>
+				<label for="hb1">Credit
+				</label>
+				<input type="radio" id="hb1" name="pm_method" value="">
+			
+				<label for="hb2">Scholorship
+				</label>
+				<input type="radio" id="hb2" name="pm_method" value="">
+		</div>
+		<div class="form-control bg-secondary">
+			<label style="display: block;">Address</label>
+		<textarea></textarea>
+		</div>
+		<div class="my-5" style="margin-left: 180px;">
+		<button class="btn btn-outline-success">Register</button>
+	</div>
+	</form>
+	</div>
+</body>
+</html>
